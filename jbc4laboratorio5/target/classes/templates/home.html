@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">    </head>
+<body class="auth-page">
+    <div class="welcome-container">
+        <div class="user-icon">👤</div>
+        <h1>¡Bienvenido! <span th:text="${session.usuario.user}"></span></h1>
+        <p>Has iniciado sesión correctamente.<br>
+        Nos alegra tenerte de vuelta.</p>
+        <a class="logout-btn" th:href="@{mantenimientoCursos}" >MANTENIMIENTO CURSOS</a>
+        <a class="logout-btn-cerrar" th:href="@{logout}" >Cerrar sesión</a>
+    </div>
+</body>
+</html>
